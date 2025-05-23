@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --outfit-font: 'Outfit', sans-serif;
+    --wheat-color: #D6BC96;
+}
+
+body {
+    background-color: #233328;
+    font-family: var(--outfit-font);
+    color: var(--wheat-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--wheat-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+header .nav {
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .nav h4 a {
+    font-size: 18px;
+    margin: 0px;
+    transition: all 0.3s ease;
+}
+
+header .logo img {
+    width: 100px;
+    height: 100px;
+    margin-top: -10px;
+}
+
+header .nav h4:hover a {
+    color: var(--wheat-color);
+    text-decoration: none;
+    filter: drop-shadow(0 0 5px var(--wheat-color));
+}
+
+.banner-section {
+    border: 2px solid red;
+    width: 100%;
+    padding: 110px 0px 110px 0px;
+    /* height: 100%;*/
+}
+
+.banner-section .banner-content {
+    display: flex;
+    /* justify-content: center; */
+}
+
+.banner-section .banner-content h1 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    font-size: 60px;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.text-animation {
+    width: 100%;
+    height: 100vh;
+    border: 2px solid red;
+    position: relative;
+}
+
+.text-animation video {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 1px solid red;
+}
+
+.banner-section .banner-content .text-animation h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    font-size: 70px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #233328;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    mix-blend-mode: multiply;
+}
