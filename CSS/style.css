@@ -469,7 +469,7 @@ header .nav h4:hover a {
 }
 
 .my-skills {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     padding: 110px 0px;
     width: 100%;
     display: flex;
@@ -485,32 +485,104 @@ header .nav h4:hover a {
 }
 
 .my-skills .skills-logo {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     padding: 30px 0px;
     backdrop-filter: blur(5px);
     border-radius: 15px;
 }
 
-.my-skills .skills-logo img {
-    width: 100px;
-    height: 100px;
+.my-skills .web-technology {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+
 }
 
-.my-skills .skills-logo .web-technology,
+.my-skills .web-technology,
+.my-skills .application-development,
+.my-skills .designing-tools,
+.my-skills .other-programming-languages,
+.my-skills .tools,
+.my-skills .ai-tools,
+.my-skills .web-hosting {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid yellow; */
+    margin-bottom: 60px;
+}
+
 .my-skills .skills-logo .web-technology .web-logos,
-.my-skills .skills-logo .application-development,
 .my-skills .skills-logo .application-development .application-logos,
-.my-skills .skills-logo .designing-tools,
 .my-skills .skills-logo .designing-tools .designing-logos,
-.my-skills .skills-logo .other-programming-languages,
 .my-skills .skills-logo .other-programming-languages .other-logos,
-.my-skills .skills-logo .tools,
 .my-skills .skills-logo .tools .tools-logos,
-.my-skills .skills-logo .ai-tools,
 .my-skills .skills-logo .ai-tools .ai-logos,
-.my-skills .skills-logo .web-hosting,
 .my-skills .skills-logo .web-hosting .web-hosting-logos {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    /* border: 2px solid red; */
+}
+
+
+.my-skills .skills-logo img {
+    width: 60px;
+    height: 60px;
+    /* margin: 0px 10px; */
+    transition: all 0.3s ease;
+}
+
+/* BOOTSTRAP LOGO & TailWind CSS logo */
+.my-skills .skills-logo .web-technology .web-logos .bootstrap {
+    width: 100px;
+}
+
+.my-skills .skills-logo .web-technology .web-logos .tailwind {
+    width: 80px;
+}
+
+.my-skills .skills-logo .web-technology .web-logos .tailwind img {
+    height: 100%;
+    width: 100%;
+}
+
+.my-skills .skills-logo .web-technology .web-logos .bootstrap img {
+    height: 100%;
+    width: 100%;
+}
+
+/* GO-LANGUAGE LOGOG */
+.my-skills .skills-logo .other-programming-languages .other-logos .go-lang {
+    width: 100px;
+}
+
+.my-skills .skills-logo .other-programming-languages .other-logos .go-lang img {
+    height: 100%;
+    width: 100%;
+}
+
+/* Netlify */
+.my-skills .skills-logo .web-hosting .web-hosting-logos .netlify {
+    width: 150px;
+}
+
+.my-skills .skills-logo .web-hosting .web-hosting-logos .netlify img {
+    width: 100%;
+}
+
+/* vercel */
+.my-skills .skills-logo .web-hosting .web-hosting-logos .vercel {
+    width: 60px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50px;
+    background: #000;
+}
+
+.my-skills .skills-logo .web-hosting .web-hosting-logos .vercel svg {
+    margin: 0;
 }
