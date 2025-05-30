@@ -505,9 +505,12 @@ header .nav h4:hover a {
 .my-skills .skills-logo .other-programming-languages,
 .my-skills .skills-logo .other-programming-languages .other-logos,
 .my-skills .skills-logo .tools,
-.my-skills .skills-logo .tools .tools-logos {
+.my-skills .skills-logo .tools .tools-logos,
+.my-skills .skills-logo .ai-tools,
+.my-skills .skills-logo .ai-tools .ai-logos,
+.my-skills .skills-logo .web-hosting,
+.my-skills .skills-logo .web-hosting .web-hosting-logos {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-wrap: wrap; */
 }
