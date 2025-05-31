@@ -471,7 +471,8 @@ header .nav h4:hover a {
 .my-skills {
     /* border: 2px solid red; */
     padding: 110px 0px;
-    width: 100%;
+    width: 70%;
+    margin: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -578,6 +579,7 @@ header .nav h4:hover a {
     height: 60px;
     display: flex;
     justify-content: center;
+    /* background: transparent; */
     align-items: center;
     border-radius: 50px;
     background: #000;
@@ -585,4 +587,30 @@ header .nav h4:hover a {
 
 .my-skills .skills-logo .web-hosting .web-hosting-logos .vercel svg {
     margin: 0;
+}
+
+/* tooltip  */
+.tooltip-container {
+    position: relative;
+    margin: 0;
+}
+
+.tooltip-container .tooltip-text {
+    /* transform: translate(20px, 30px); */
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+
+.tooltip-container .tooltip-text h6 {
+    opacity: 0;
+    margin: 0;
+    font-size: 8px;
+    transition: all 0.5s;
+}
+
+.tooltip-container:hover .tooltip-text h6 {
+    transform: translate(-5px, -45px);
+    font-size: 16px;
+    opacity: 1;
 }
