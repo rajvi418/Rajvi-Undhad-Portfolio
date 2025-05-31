@@ -471,7 +471,7 @@ header .nav h4:hover a {
 .my-skills {
     /* border: 2px solid red; */
     padding: 110px 0px;
-    width: 70%;
+    width: 80%;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -492,11 +492,23 @@ header .nav h4:hover a {
     border-radius: 15px;
 }
 
+.my-skills .skills-logo .web-logos {
+    display: block;
+    width: 100%;
+}
+
+.my-skills .skills-logo .logo-row {
+    gap: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
 .my-skills .web-technology {
     display: flex;
     align-items: center;
-    margin-bottom: 60px;
-
+    /* margin-bottom: 60px; */
 }
 
 .my-skills .web-technology,
@@ -507,9 +519,9 @@ header .nav h4:hover a {
 .my-skills .ai-tools,
 .my-skills .web-hosting {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
-    /* border: 2px solid yellow; */
+    /* border: 2px solid green; */
     margin-bottom: 60px;
 }
 
@@ -521,10 +533,9 @@ header .nav h4:hover a {
 .my-skills .skills-logo .ai-tools .ai-logos,
 .my-skills .skills-logo .web-hosting .web-hosting-logos {
     width: 60%;
-    display: flex;
-    align-items: center;
+    display: block;
+    /* align-items: center; */
     gap: 30px;
-    /* border: 2px solid red; */
 }
 
 
@@ -535,17 +546,27 @@ header .nav h4:hover a {
     transition: all 0.3s ease;
 }
 
-/* BOOTSTRAP LOGO & TailWind CSS logo */
+/* BOOTSTRAP LOGO , GSAP LOGO & TailWind CSS logo */
 .my-skills .skills-logo .web-technology .web-logos .bootstrap {
-    width: 100px;
+    width: 70px;
 }
 
 .my-skills .skills-logo .web-technology .web-logos .tailwind {
-    width: 80px;
+    width: 70px;
+    /* height: 80px; */
 }
 
 .my-skills .skills-logo .web-technology .web-logos .tailwind img {
     height: 100%;
+    width: 100%;
+}
+
+.my-skills .skills-logo .web-technology .web-logos .logo-row .gsap {
+    width: 100px;
+    height: 65px;
+}
+
+.my-skills .skills-logo .web-technology .web-logos .logo-row .gsap img {
     width: 100%;
 }
 
@@ -589,28 +610,148 @@ header .nav h4:hover a {
     margin: 0;
 }
 
+.my-skills .skills-logo .web-technology .web-logos .gsap {
+    width: 50px;
+    height: 50px;
+}
+
 /* tooltip  */
-.tooltip-container {
+.html,
+.css,
+.javaScript,
+.jQuery,
+.mediaQuery,
+.bootstrap,
+.gsap {
     position: relative;
     margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
-.tooltip-container .tooltip-text {
-    /* transform: translate(20px, 30px); */
-    position: absolute;
-    top: 20px;
-    left: 15px;
-}
-
-.tooltip-container .tooltip-text h6 {
+/* HTML SECTION  */
+.html .tooltip-text h6 {
     opacity: 0;
-    margin: 0;
+    position: absolute;
+    left: 20px;
+    top: 20px;
     font-size: 8px;
     transition: all 0.5s;
 }
 
-.tooltip-container:hover .tooltip-text h6 {
-    transform: translate(-5px, -45px);
+.html:hover .tooltip-text h6 {
+    transform: translate(-10px, -45px);
+    font-size: 16px;
+    opacity: 1;
+}
+
+/* CSS SECTION  */
+.css .tooltip-text h6 {
+    opacity: 0;
+    position: absolute;
+    left: 25px;
+    top: 20px;
+    font-size: 8px;
+    transition: all 0.5s;
+}
+
+.css:hover .tooltip-text h6 {
+    transform: translate(-10px, -45px);
+    font-size: 16px;
+    opacity: 1;
+}
+
+/* JavaScript SECTION */
+.javaScript .tooltip-text h6 {
+    opacity: 0;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    font-size: 8px;
+    transition: all 0.5s;
+}
+
+.javaScript:hover .tooltip-text h6 {
+    transform: translate(-20px, -45px);
+    font-size: 16px;
+    opacity: 1;
+}
+
+/* JQurey SECTION */
+.jQuery .tooltip-text h6 {
+    opacity: 0;
+    position: absolute;
+    left: 18px;
+    top: 20px;
+    font-size: 8px;
+    transition: all 0.5s;
+}
+
+.jQuery:hover .tooltip-text h6 {
+    transform: translate(-15px, -45px);
+    font-size: 16px;
+    opacity: 1;
+}
+
+/* MediaQuery SECTION */
+.mediaQuery .tooltip-text h6 {
+    opacity: 0;
+    position: absolute;
+    left: 5px;
+    top: 20px;
+    font-size: 8px;
+    transition: all 0.5s;
+}
+
+.mediaQuery:hover .tooltip-text h6 {
+    transform: translate(-20px, -45px);
+    font-size: 16px;
+    opacity: 1;
+}
+
+/* Tailwind CSS SECTION */
+.tailwind .tooltip-text h6 {
+    opacity: 0;
+    position: absolute;
+    top: 5%;
+    font-size: 8px;
+    transition: all 0.5s;
+}
+
+.tailwind:hover .tooltip-text h6 {
+    transform: translate(-20px, -55px);
+    font-size: 16px;
+    opacity: 1;
+}
+
+/* bootstrap CSS SECTION */
+.bootstrap .tooltip-text h6 {
+    opacity: 0;
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    font-size: 8px;
+    transition: all 0.5s;
+}
+
+.bootstrap:hover .tooltip-text h6 {
+    transform: translate(-15px, -45px);
+    font-size: 16px;
+    opacity: 1;
+}
+
+/* gsap CSS SECTION */
+.gsap .tooltip-text h6 {
+    opacity: 0;
+    position: absolute;
+    left: 40px;
+    top: 20px;
+    font-size: 8px;
+    transition: all 0.5s;
+}
+
+.gsap:hover .tooltip-text h6 {
+    transform: translate(-10px, -45px);
     font-size: 16px;
     opacity: 1;
 }
