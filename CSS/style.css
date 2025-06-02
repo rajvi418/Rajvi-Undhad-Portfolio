@@ -465,7 +465,8 @@ header .nav h4:hover a {
     border: 4px solid var(--wheat-color);
     background-color: transparent;
     color: var(--wheat-color);
-    box-shadow: 0 0 20px var(--wheat-color);
+    /* box-shadow: 0 0 20px var(--wheat-color); */
+    filter: drop-shadow(0 0 5px var(--wheat-color));
 }
 
 .my-skills {
@@ -519,7 +520,7 @@ header .nav h4:hover a {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     margin-bottom: 30px;
 }
 
@@ -544,6 +545,11 @@ header .nav h4:hover a {
     transition: all 0.3s ease;
 }
 
+.my-skills .skills-logo img:hover {
+
+    filter: drop-shadow(0 0 5px var(--wheat-color));
+}
+
 /* BOOTSTRAP LOGO , GSAP LOGO & TailWind CSS logo */
 .my-skills .skills-logo .web-technology .web-logos .bootstrap {
     width: 70px;
@@ -560,12 +566,15 @@ header .nav h4:hover a {
 }
 
 .my-skills .skills-logo .web-technology .web-logos .logo-row .gsap {
-    width: 100px;
-    height: 65px;
+    width: 90px;
+    height: 55px;
+    display: flex;
+    align-items: center;
 }
 
 .my-skills .skills-logo .web-technology .web-logos .logo-row .gsap img {
     width: 100%;
+    height: 80%;
 }
 
 .my-skills .skills-logo .web-technology .web-logos .bootstrap img {
@@ -641,6 +650,7 @@ header .nav h4:hover a {
 .html:hover .tooltip-text h6 {
     transform: translate(-10px, -45px);
     font-size: 16px;
+    filter: drop-shadow(0 0 5px var(--wheat-color));
     opacity: 1;
 }
 
@@ -658,6 +668,7 @@ header .nav h4:hover a {
     transform: translate(-10px, -45px);
     font-size: 16px;
     opacity: 1;
+    filter: drop-shadow(0 0 5px var(--wheat-color));
 }
 
 /* JavaScript SECTION */
@@ -674,6 +685,7 @@ header .nav h4:hover a {
     transform: translate(-20px, -45px);
     font-size: 16px;
     opacity: 1;
+    filter: drop-shadow(0 0 5px var(--wheat-color));
 }
 
 /* JQurey SECTION */
@@ -690,6 +702,7 @@ header .nav h4:hover a {
     transform: translate(-15px, -45px);
     font-size: 16px;
     opacity: 1;
+    filter: drop-shadow(0 0 5px var(--wheat-color));
 }
 
 /* MediaQuery SECTION */
@@ -706,6 +719,7 @@ header .nav h4:hover a {
     transform: translate(-20px, -45px);
     font-size: 16px;
     opacity: 1;
+    filter: drop-shadow(0 0 5px var(--wheat-color));
 }
 
 /* Tailwind CSS SECTION */
@@ -718,9 +732,10 @@ header .nav h4:hover a {
 }
 
 .tailwind:hover .tooltip-text h6 {
-    transform: translate(-20px, -55px);
+    transform: translate(-10px, -45px);
     font-size: 16px;
     opacity: 1;
+    filter: drop-shadow(0 0 5px var(--wheat-color));
 }
 
 /* bootstrap CSS SECTION */
@@ -737,6 +752,7 @@ header .nav h4:hover a {
     transform: translate(-15px, -45px);
     font-size: 16px;
     opacity: 1;
+    filter: drop-shadow(0 0 5px var(--wheat-color));
 }
 
 /* gsap CSS SECTION */
@@ -750,9 +766,10 @@ header .nav h4:hover a {
 }
 
 .gsap:hover .tooltip-text h6 {
-    transform: translate(-10px, -45px);
+    transform: translate(-15px, -35px);
     font-size: 16px;
     opacity: 1;
+    filter: drop-shadow(0 0 5px var(--wheat-color));
 }
 
 /* Web Designing */
@@ -778,35 +795,54 @@ header .nav h4:hover a {
 }
 
 .figma:hover .tooltip-text h6 {
-    transform: translate(-10px, -45px);
+    transform: translate(-13px, -45px);
     font-size: 16px;
+    filter: drop-shadow(0 0 5px var(--wheat-color));
     opacity: 1;
 }
 
 /*adobe-xd  SECTION  */
 .adobe-xd {
     position: relative;
-    width: 90px;
+    width: 120px;
 }
 
 .adobe-xd .tooltip-text h6 {
-    border: 2px solid red;
-    /* opacity: 0; */
+    /* border: 2px solid red; */
+    opacity: 0;
     position: absolute;
     top: 20px;
-    left: 30px;
+    left: 40px;
     font-size: 8px;
     transition: all 0.5s;
 }
 
 .adobe-xd:hover .tooltip-text h6 {
-    transform: translate(-20px, -45px);
+    transform: translate(-15px, -45px);
     font-size: 16px;
     opacity: 1;
+    filter: drop-shadow(0 0 5px var(--wheat-color));
 }
 
 /* canva SECTION */
 .canva .tooltip-text h6 {
+    opacity: 0;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 8px;
+    transition: all 0.5s;
+}
+
+.canva:hover .tooltip-text h6 {
+    transform: translate(-15px, -45px);
+    font-size: 16px;
+    opacity: 1;
+    filter: drop-shadow(0 0 5px var(--wheat-color));
+}
+
+/*photoshop SECTION */
+.photoshop .tooltip-text h6 {
     opacity: 0;
     position: absolute;
     left: 10px;
@@ -815,33 +851,18 @@ header .nav h4:hover a {
     transition: all 0.5s;
 }
 
-.canva:hover .tooltip-text h6 {
-    transform: translate(-20px, -45px);
-    font-size: 16px;
-    opacity: 1;
-}
-
-/*photoshop SECTION */
-.photoshop .tooltip-text h6 {
-    opacity: 0;
-    position: absolute;
-    left: 18px;
-    top: 20px;
-    font-size: 8px;
-    transition: all 0.5s;
-}
-
 .photoshop:hover .tooltip-text h6 {
-    transform: translate(-15px, -45px);
+    transform: translate(-16px, -45px);
     font-size: 16px;
     opacity: 1;
+    filter: drop-shadow(0 0 5px var(--wheat-color));
 }
 
 /* illustrator SECTION */
 .illustrator .tooltip-text h6 {
-    opacity: 0;
+    /* opacity: 0; */
     position: absolute;
-    left: 5px;
+    left: 15px;
     top: 20px;
     font-size: 8px;
     transition: all 0.5s;
@@ -851,4 +872,5 @@ header .nav h4:hover a {
     transform: translate(-20px, -45px);
     font-size: 16px;
     opacity: 1;
+    filter: drop-shadow(0 0 5px var(--wheat-color));
 }
