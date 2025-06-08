@@ -1236,3 +1236,10 @@ header .nav h4:hover a {
     margin: 0;
     margin-bottom: 5px;
 }
+
+/* Projects Section */
+.projects {
+    padding: 110px 0px 110px 0px;
+    border: 2px solid red;
+    width: 100%;
+}
