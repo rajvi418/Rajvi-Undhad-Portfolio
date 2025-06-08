@@ -489,6 +489,7 @@ header .nav h4:hover a {
     padding: 30px 0px;
     backdrop-filter: blur(5px);
     border-radius: 15px;
+    /* border: 2px solid red; */
 }
 
 .my-skills .skills-logo .web-logos {
@@ -719,7 +720,7 @@ header .nav h4:hover a {
 }
 
 .tailwind:hover .tooltip-text h6 {
-    transform: translate(-10px, -15px);
+    transform: translate(-10px, -40px);
     font-size: 16px;
     opacity: 1;
     filter: drop-shadow(0 0 5px var(--wheat-color));
@@ -1233,4 +1234,5 @@ header .nav h4:hover a {
 
 .my-skills .skills-logo .web-hosting .web-hosting-logos .vercel-logo svg {
     margin: 0;
+    margin-bottom: 5px;
 }
