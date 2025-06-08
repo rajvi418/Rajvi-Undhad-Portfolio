@@ -538,14 +538,16 @@ header .nav h4:hover a {
 }
 
 
-.my-skills .skills-logo img {
+.my-skills .skills-logo img,
+.my-skills .skills-logo .web-hosting .web-hosting-logos .vercel .vercel-logo {
     width: 60px;
     height: 60px;
     /* margin: 0px 10px; */
     transition: all 0.3s ease;
 }
 
-.my-skills .skills-logo img:hover {
+.my-skills .skills-logo img:hover,
+.my-skills .skills-logo .web-hosting .web-hosting-logos .vercel:hover .vercel-logo {
 
     filter: drop-shadow(0 0 5px var(--wheat-color));
 }
@@ -1095,46 +1097,55 @@ header .nav h4:hover a {
     align-items: baseline;
 }
 
+.chatgpt .logo {
+    height: 60px;
+    width: 60px;
+}
+
+.chatgpt .logo img {
+    height: 100%;
+    width: 100%;
+}
+
 .chatgpt .tooltip-text h6 {
-    /* opacity: 0; */
+    opacity: 0;
     position: absolute;
-    left: 10px;
-    width: 200%;
-    top: 20px;
+    left: 15px;
+    /* width: 200%; */
+    top: 30px;
     font-size: 8px;
     transition: all 0.5s;
 }
 
 .chatgpt:hover .tooltip-text h6 {
-    transform: translate(-25px, -50px);
+    transform: translate(-18px, -55px);
     font-size: 16px;
     opacity: 1;
     filter: drop-shadow(0 0 5px var(--wheat-color));
 }
 
 .deepseek .tooltip-text h6 {
-    /* opacity: 0; */
+    opacity: 0;
     position: absolute;
     /* text-align: center; */
     width: 100%;
-    left: 25px;
+    left: 10px;
     top: 20px;
     font-size: 8px;
     transition: all 0.5s;
 }
 
 .deepseek:hover .tooltip-text h6 {
-    transform: translate(-10px, -45px);
-    text-align: center;
+    transform: translate(-15px, -45px);
     font-size: 16px;
     opacity: 1;
     filter: drop-shadow(0 0 5px var(--wheat-color));
 }
 
 .grok .tooltip-text h6 {
-    /* opacity: 0; */
+    opacity: 0;
     position: absolute;
-    left: 25px;
+    left: 20px;
     top: 20px;
     font-size: 8px;
     transition: all 0.5s;
@@ -1148,16 +1159,16 @@ header .nav h4:hover a {
 }
 
 .grammerly .tooltip-text h6 {
-    /* opacity: 0; */
+    opacity: 0;
     position: absolute;
-    left: 25px;
+    left: 10px;
     top: 20px;
     font-size: 8px;
     transition: all 0.5s;
 }
 
 .grammerly:hover .tooltip-text h6 {
-    transform: translate(-10px, -45px);
+    transform: translate(-20px, -45px);
     font-size: 16px;
     opacity: 1;
     filter: drop-shadow(0 0 5px var(--wheat-color));
@@ -1175,9 +1186,9 @@ header .nav h4:hover a {
 }
 
 .netlify .tooltip-text h6 {
-    /* opacity: 0; */
+    opacity: 0;
     position: absolute;
-    left: 10px;
+    left: 60px;
     width: 200%;
     top: 20px;
     font-size: 8px;
@@ -1185,24 +1196,23 @@ header .nav h4:hover a {
 }
 
 .netlify:hover .tooltip-text h6 {
-    transform: translate(-25px, -50px);
+    transform: translate(-5px, -50px);
     font-size: 16px;
     opacity: 1;
     filter: drop-shadow(0 0 5px var(--wheat-color));
 }
 
 .vercel .tooltip-text h6 {
-    /* opacity: 0; */
+    opacity: 0;
     position: absolute;
-    left: 10px;
-    width: 200%;
+    left: 18px;
     top: 20px;
     font-size: 8px;
     transition: all 0.5s;
 }
 
 .vercel:hover .tooltip-text h6 {
-    transform: translate(-25px, -50px);
+    transform: translate(-13px, -50px);
     font-size: 16px;
     opacity: 1;
     filter: drop-shadow(0 0 5px var(--wheat-color));
@@ -1215,7 +1225,7 @@ header .nav h4:hover a {
     height: 60px;
     display: flex;
     justify-content: center;
-    /* background: transparent; */
+    background: transparent;
     align-items: center;
     border-radius: 50px;
     background: #000;
