@@ -7,25 +7,30 @@
 :root {
     --outfit-font: 'Outfit', sans-serif;
     --wheat-color: #D6BC96;
+    --white-color: #ffffff;
 }
 
 body {
-    background-color: #233328;
+    background-color: #000;
+    /* background-color: transparent; */
     font-family: var(--outfit-font);
-    color: var(--wheat-color);
+    color: var(--white-color);
+    z-index: -999;
 }
 
 a {
     text-decoration: none;
-    color: var(--wheat-color);
+    color: var(--white-color);
 }
 
 header {
     position: fixed;
     width: 100%;
-    background-color: #233328;
+    /* background-color: #000; */
+    background-color: transparent;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .header-section {
@@ -33,6 +38,7 @@ header {
     width: 80%;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
 }
 
 header .nav {
@@ -49,15 +55,15 @@ header .nav h4 a {
 }
 
 header .logo img {
-    width: 100px;
-    height: 100px;
-    margin-top: -10px;
+    width: 40px;
+    height: 40px;
+    /* margin-top: -10px; */
 }
 
 header .nav h4:hover a {
-    color: var(--wheat-color);
+    color: var(--white-color);
     text-decoration: none;
-    filter: drop-shadow(0 0 5px var(--wheat-color));
+    filter: drop-shadow(0 0 5px var(--white-color));
 }
 
 .banner-section {
@@ -65,6 +71,11 @@ header .nav h4:hover a {
     padding: 150px 0px 70px 0px;
     display: flex;
     align-items: center;
+    height: 100vh;
+    /* background-image: url('../Images/PurpleBackground.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
     justify-content: space-between;
     margin-bottom: 30px;
 }
@@ -92,7 +103,7 @@ header .nav h4:hover a {
     margin: 0;
     margin-bottom: 30px;
     overflow: hidden;
-    background-color: #233328;
+    background-color: #000;
     position: relative;
     display: block;
 }
@@ -116,7 +127,7 @@ header .nav h4:hover a {
     font-size: 70px;
     font-weight: 600;
     color: #ffffff;
-    background-color: #233328;
+    background-color: #000;
     overflow: hidden;
     mix-blend-mode: darken;
 }
@@ -126,8 +137,8 @@ header .nav h4:hover a {
     height: 50px;
     width: 150px;
     border-radius: 100px;
-    background-color: var(--wheat-color);
-    border: 4px solid var(--wheat-color);
+    background-color: var(--white-color);
+    border: 4px solid var(--white-color);
     position: relative;
     /* color: black; */
     font-weight: 600;
@@ -135,7 +146,7 @@ header .nav h4:hover a {
 }
 
 .fil0 {
-    fill: #a38560;
+    fill: #ffffff;
 }
 
 .star-1 {
@@ -253,10 +264,11 @@ header .nav h4:hover a {
 }
 
 .get-started-button:hover {
-    border: 4px solid var(--wheat-color);
+    border: 4px solid var(--white-color);
+    ;
     background-color: transparent;
-    color: var(--wheat-color);
-    box-shadow: 0 0 20px var(--wheat-color);
+    color: var(--white-color);
+    box-shadow: 0 0 20px var(--white-color);
 }
 
 /* Image */
@@ -335,8 +347,10 @@ header .nav h4:hover a {
     height: 50px;
     width: 150px;
     border-radius: 100px;
-    background-color: var(--wheat-color);
-    border: 4px solid var(--wheat-color);
+    background-color: var(--white-color);
+    ;
+    border: 4px solid var(--white-color);
+    ;
     position: relative;
     /* color: black; */
     font-weight: 600;
@@ -344,7 +358,7 @@ header .nav h4:hover a {
 }
 
 .fil0 {
-    fill: #a38560;
+    fill: #ffffff;
 }
 
 .star-1 {
@@ -462,11 +476,11 @@ header .nav h4:hover a {
 }
 
 .get-resume-button:hover {
-    border: 4px solid var(--wheat-color);
+    border: 4px solid var(--white-color);
     background-color: transparent;
-    color: var(--wheat-color);
-    /* box-shadow: 0 0 20px var(--wheat-color); */
-    filter: drop-shadow(0 0 5px var(--wheat-color));
+    color: var(--white-color);
+    /* box-shadow: 0 0 20px  var(--white-color) */
+    filter: drop-shadow(0 0 5px var(--white-color));
 }
 
 .my-skills {
@@ -550,7 +564,7 @@ header .nav h4:hover a {
 .my-skills .skills-logo img:hover,
 .my-skills .skills-logo .web-hosting .web-hosting-logos .vercel:hover .vercel-logo {
 
-    filter: drop-shadow(0 0 5px var(--wheat-color));
+    filter: drop-shadow(0 0 5px var(--white-color));
 }
 
 /* BOOTSTRAP LOGO , GSAP LOGO & TailWind CSS logo */
@@ -638,7 +652,7 @@ header .nav h4:hover a {
 .html:hover .tooltip-text h6 {
     transform: translate(-10px, -45px);
     font-size: 16px;
-    filter: drop-shadow(0 0 5px var(--wheat-color));
+    filter: drop-shadow(0 0 5px var(--white-color));
     opacity: 1;
 }
 
@@ -656,7 +670,7 @@ header .nav h4:hover a {
     transform: translate(-10px, -45px);
     font-size: 16px;
     opacity: 1;
-    filter: drop-shadow(0 0 5px var(--wheat-color));
+    filter: drop-shadow(0 0 5px var(--white-color));
 }
 
 /* JavaScript SECTION */
@@ -673,7 +687,7 @@ header .nav h4:hover a {
     transform: translate(-20px, -45px);
     font-size: 16px;
     opacity: 1;
-    filter: drop-shadow(0 0 5px var(--wheat-color));
+    filter: drop-shadow(0 0 5px var(--white-color));
 }
 
 /* JQurey SECTION */
@@ -690,7 +704,7 @@ header .nav h4:hover a {
     transform: translate(-15px, -45px);
     font-size: 16px;
     opacity: 1;
-    filter: drop-shadow(0 0 5px var(--wheat-color));
+    filter: drop-shadow(0 0 5px var(--white-color));
 }
 
 /* MediaQuery SECTION */
@@ -707,7 +721,7 @@ header .nav h4:hover a {
     transform: translate(-20px, -45px);
     font-size: 16px;
     opacity: 1;
-    filter: drop-shadow(0 0 5px var(--wheat-color));
+    filter: drop-shadow(0 0 5px var(--white-color));
 }
 
 /* Tailwind CSS SECTION */
@@ -723,7 +737,7 @@ header .nav h4:hover a {
     transform: translate(-10px, -40px);
     font-size: 16px;
     opacity: 1;
-    filter: drop-shadow(0 0 5px var(--wheat-color));
+    filter: drop-shadow(0 0 5px var(--white-color));
 }
 
 /* bootstrap CSS SECTION */
@@ -740,7 +754,7 @@ header .nav h4:hover a {
     transform: translate(-15px, -45px);
     font-size: 16px;
     opacity: 1;
-    filter: drop-shadow(0 0 5px var(--wheat-color));
+    filter: drop-shadow(0 0 5px var(--white-color));
 }
 
 /* gsap CSS SECTION */
@@ -757,7 +771,7 @@ header .nav h4:hover a {
     transform: translate(-15px, -35px);
     font-size: 16px;
     opacity: 1;
-    filter: drop-shadow(0 0 5px var(--wheat-color));
+    filter: drop-shadow(0 0 5px var(--white-color));
 }
 
 /* Web Designing */
@@ -785,7 +799,7 @@ header .nav h4:hover a {
 .figma:hover .tooltip-text h6 {
     transform: translate(-13px, -45px);
     font-size: 16px;
-    filter: drop-shadow(0 0 5px var(--wheat-color));
+    filter: drop-shadow(0 0 5px var(--white-color));
     opacity: 1;
 }
 
@@ -810,7 +824,7 @@ header .nav h4:hover a {
     transform: translate(-15px, -45px);
     font-size: 16px;
     opacity: 1;
-    filter: drop-shadow(0 0 5px var(--wheat-color));
+    filter: drop-shadow(0 0 5px var(--white-color));
 }
 
 /* canva SECTION */
@@ -827,7 +841,7 @@ header .nav h4:hover a {
     transform: translate(-15px, -45px);
     font-size: 16px;
     opacity: 1;
-    filter: drop-shadow(0 0 5px var(--wheat-color));
+    filter: drop-shadow(0 0 5px var(--white-color));
 }
 
 /*photoshop SECTION */
@@ -844,7 +858,7 @@ header .nav h4:hover a {
     transform: translate(-16px, -45px);
     font-size: 16px;
     opacity: 1;
-    filter: drop-shadow(0 0 5px var(--wheat-color));
+    filter: drop-shadow(0 0 5px var(--white-color));
 }
 
 /* illustrator SECTION */
@@ -861,7 +875,7 @@ header .nav h4:hover a {
     transform: translate(-20px, -45px);
     font-size: 16px;
     opacity: 1;
-    filter: drop-shadow(0 0 5px var(--wheat-color));
+    filter: drop-shadow(0 0 5px var(--white-color));
 }
 
 /* Application Development */
@@ -889,7 +903,7 @@ header .nav h4:hover a {
     transform: translate(-10px, -45px);
     font-size: 16px;
     opacity: 1;
-    filter: drop-shadow(0 0 5px var(--wheat-color));
+    filter: drop-shadow(0 0 5px var(--white-color));
 }
 
 .android-studio .tooltip-text h6 {
@@ -907,7 +921,7 @@ header .nav h4:hover a {
     text-align: center;
     font-size: 16px;
     opacity: 1;
-    filter: drop-shadow(0 0 5px var(--wheat-color));
+    filter: drop-shadow(0 0 5px var(--white-color));
 }
 
 .java .tooltip-text h6 {
@@ -923,7 +937,7 @@ header .nav h4:hover a {
     transform: translate(-10px, -45px);
     font-size: 16px;
     opacity: 1;
-    filter: drop-shadow(0 0 5px var(--wheat-color));
+    filter: drop-shadow(0 0 5px var(--white-color));
 }
 
 .dart .tooltip-text h6 {
@@ -939,7 +953,7 @@ header .nav h4:hover a {
     transform: translate(-10px, -45px);
     font-size: 16px;
     opacity: 1;
-    filter: drop-shadow(0 0 5px var(--wheat-color));
+    filter: drop-shadow(0 0 5px var(--white-color));
 }
 
 /* other  */
@@ -968,7 +982,7 @@ header .nav h4:hover a {
     transform: translate(-25px, -50px);
     font-size: 16px;
     opacity: 1;
-    filter: drop-shadow(0 0 5px var(--wheat-color));
+    filter: drop-shadow(0 0 5px var(--white-color));
 }
 
 .c-plus-plus .tooltip-text h6 {
@@ -986,7 +1000,7 @@ header .nav h4:hover a {
     text-align: center;
     font-size: 16px;
     opacity: 1;
-    filter: drop-shadow(0 0 5px var(--wheat-color));
+    filter: drop-shadow(0 0 5px var(--white-color));
 }
 
 .go-lang .tooltip-text h6 {
@@ -1003,7 +1017,7 @@ header .nav h4:hover a {
     transform: translate(-30px, -45px);
     font-size: 16px;
     opacity: 1;
-    filter: drop-shadow(0 0 5px var(--wheat-color));
+    filter: drop-shadow(0 0 5px var(--white-color));
 }
 
 .python .tooltip-text h6 {
@@ -1019,7 +1033,7 @@ header .nav h4:hover a {
     transform: translate(-10px, -45px);
     font-size: 16px;
     opacity: 1;
-    filter: drop-shadow(0 0 5px var(--wheat-color));
+    filter: drop-shadow(0 0 5px var(--white-color));
 }
 
 /* Tools  */
@@ -1048,7 +1062,7 @@ header .nav h4:hover a {
     transform: translate(-15px, -50px);
     font-size: 16px;
     opacity: 1;
-    filter: drop-shadow(0 0 5px var(--wheat-color));
+    filter: drop-shadow(0 0 5px var(--white-color));
 }
 
 .wix-studio .tooltip-text h6 {
@@ -1066,7 +1080,7 @@ header .nav h4:hover a {
     transform: translate(-20px, -45px);
     font-size: 16px;
     opacity: 1;
-    filter: drop-shadow(0 0 5px var(--wheat-color));
+    filter: drop-shadow(0 0 5px var(--white-color));
 }
 
 .firebase .tooltip-text h6 {
@@ -1082,7 +1096,7 @@ header .nav h4:hover a {
     transform: translate(-15px, -45px);
     font-size: 16px;
     opacity: 1;
-    filter: drop-shadow(0 0 5px var(--wheat-color));
+    filter: drop-shadow(0 0 5px var(--white-color));
 }
 
 /* Ai Tools  */
@@ -1122,7 +1136,7 @@ header .nav h4:hover a {
     transform: translate(-18px, -55px);
     font-size: 16px;
     opacity: 1;
-    filter: drop-shadow(0 0 5px var(--wheat-color));
+    filter: drop-shadow(0 0 5px var(--white-color));
 }
 
 .deepseek .tooltip-text h6 {
@@ -1140,7 +1154,7 @@ header .nav h4:hover a {
     transform: translate(-15px, -45px);
     font-size: 16px;
     opacity: 1;
-    filter: drop-shadow(0 0 5px var(--wheat-color));
+    filter: drop-shadow(0 0 5px var(--white-color));
 }
 
 .grok .tooltip-text h6 {
@@ -1156,7 +1170,7 @@ header .nav h4:hover a {
     transform: translate(-10px, -45px);
     font-size: 16px;
     opacity: 1;
-    filter: drop-shadow(0 0 5px var(--wheat-color));
+    filter: drop-shadow(0 0 5px var(--white-color));
 }
 
 .grammerly .tooltip-text h6 {
@@ -1172,7 +1186,7 @@ header .nav h4:hover a {
     transform: translate(-20px, -45px);
     font-size: 16px;
     opacity: 1;
-    filter: drop-shadow(0 0 5px var(--wheat-color));
+    filter: drop-shadow(0 0 5px var(--white-color));
 }
 
 /* Web Hosting  */
@@ -1200,7 +1214,7 @@ header .nav h4:hover a {
     transform: translate(-5px, -50px);
     font-size: 16px;
     opacity: 1;
-    filter: drop-shadow(0 0 5px var(--wheat-color));
+    filter: drop-shadow(0 0 5px var(--white-color));
 }
 
 .vercel .tooltip-text h6 {
@@ -1216,7 +1230,7 @@ header .nav h4:hover a {
     transform: translate(-13px, -50px);
     font-size: 16px;
     opacity: 1;
-    filter: drop-shadow(0 0 5px var(--wheat-color));
+    filter: drop-shadow(0 0 5px var(--white-color));
 }
 
 
