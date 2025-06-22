@@ -25,10 +25,14 @@ a {
 
 header {
     position: fixed;
+    padding: 15px 0px;
     width: 100%;
-    /* background-color: #000; */
-    background-color: transparent;
+    backdrop-filter: blur(5px);
+    background-color: #00000034;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    /* background-color: transparent; */
     display: flex;
+    z-index: 999;
     justify-content: center;
     align-items: center;
 }
@@ -67,16 +71,18 @@ header .nav h4:hover a {
 }
 
 .banner-section {
-    width: 100%;
-    padding: 150px 0px 70px 0px;
+    width: 90%;
+    padding: 100px 0px 70px 0px;
+    margin: auto;
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 100vh;
     /* background-image: url('../Images/PurpleBackground.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; */
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-bottom: 30px;
 }
 
@@ -277,7 +283,7 @@ header .nav h4:hover a {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: -40px;
+    margin-top: -80px;
 }
 
 .banner-images {
