@@ -1285,8 +1285,7 @@ header .nav h4:hover a {
 }
 
 .software-name {
-    border: 2px solid green;
-    width: 90%;
+    width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
@@ -1295,10 +1294,13 @@ header .nav h4:hover a {
 }
 
 .tab-header {
-    border: 2px solid red;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .software-name .tab-header .templates-heading {
+    font-size: 30px;
     text-decoration: none;
     color: var(--white-color);
     background-color: transparent;
@@ -1312,6 +1314,26 @@ header .nav h4:hover a {
     filter: drop-shadow(0 0 5px var(--white-color));
 }
 
+.tab-pane {
+    display: none;
+    padding: 20px;
+    border-top: none;
+}
+
+.tab-pane.active {
+    display: block;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
 
 .my-projects .projects-templates .web-templates {
     width: 100%;
