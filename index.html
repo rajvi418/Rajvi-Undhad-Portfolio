@@ -4,15 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Bootstrap/dist/css/bootstrap.rtl.min.css">
-    <link rel="stylesheet" href="Bootstrap/dist/js/bootstrap.bundle.min.js.map">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="Bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="Bootstrap/dist/css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
     <link rel="stylesheet" href="CSS/fonts.css">
     <link rel="stylesheet" href="CSS/style.css">
+
 
     <title>Rajvi's Portfolio</title>
 </head>
@@ -43,8 +38,8 @@
                 <h1>Hello! I Am</h1>
             </div>
             <div class="text-animation">
-                <video autoplay muted loop>
-                    <source src="Video/new mesh.mp4" type="video/mp4">
+                <video autoplay muted loop class="transparent-video">
+                    <source src="Video/mesh 2.mp4" type="video/mp4">
                 </video>
                 <h1 class="name-animation">Rajvi Undhad</h1>
             </div>
@@ -135,12 +130,12 @@
         </div>
         <div class="banner-images-content">
             <div class="banner-images">
-                <!-- <img src="Images/img.png" alt="#"> -->
+                <!-- <img src="Images/Rajvi.jpg" alt="#"> -->
             </div>
-            <div class="mastery-feild">
-                <h1>web</h1>
-                <h1>Desinger</h1>
-            </div>
+            <!-- <div class="mastery-feild">
+                    <h1>web</h1>
+                    <h1>Desinger</h1>
+                </div> -->
         </div>
     </section>
     <section class="about-section" id="about">
@@ -584,20 +579,38 @@
             <h1>My Projects</h1>
         </div>
         <div class="my-projects">
-            <div class="software-name">
-                <div class="web-templates-heading">
+            <!-- <div class="software-name">
+                <div class="tab-button templates-heading">
                     <a href="#web-templates">
                         <h3>Web Templates</h3>
                     </a>
                 </div>
-                <div class="illustrations-heading">
+                <div class="tab-button templates-heading">
                     <a href="#illustrations">
                         <h3>Illustrations</h3>
                     </a>
                 </div>
+            </div> -->
+            <div class="software-name tab-container">
+                <div class="tab-header">
+                    <button class="templates-heading tab-button active" data-tab="tab1">Web Templates</button>
+
+                    <button class="templates-heading tab-button" data-tab="tab2">Illustrations</button>
+                </div>
+
+                <div class="tab-content">
+                    <div id="tab1" class="tab-pane active">
+                        <h2>Content for Tab 1</h2>
+                        <p>This is the content for the first tab.</p>
+                    </div>
+                    <div id="tab2" class="tab-pane">
+                        <h2>Content for Tab 2</h2>
+                        <p>This is the content for the second tab.</p>
+                    </div>
+                </div>
             </div>
             <div class="projects-templates">
-                <div class="web-templates" id="web-templates">
+                <div class="web-templates tab-pane" id="web-templates">
                     <div class="first-row">
                         <!-- Box 1 -->
                         <div class="proOne-template">
@@ -630,11 +643,13 @@
                     </div>
 
                 </div>
-                <div class="illustrations" id="illustrations"></div>
+                <div class="illustrations tab-pane" id="illustrations"></div>
             </div>
 
         </div>
     </section>
 </body>
+<script src="js/bootstrap.js"></script>
+<script src="js/tab.js"></script>
 
 </html>

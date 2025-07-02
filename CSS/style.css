@@ -18,6 +18,14 @@ body {
     z-index: -999;
 }
 
+.robot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 a {
     text-decoration: none;
     color: var(--white-color);
@@ -28,8 +36,8 @@ header {
     padding: 15px 0px;
     width: 100%;
     backdrop-filter: blur(5px);
-    background-color: #00000034;
-    border-bottom: 1px solid rgb(0, 0, 0);
+    background-color: #0000001f;
+    /* border-bottom: 1px solid rgb(0, 0, 0); */
     /* background-color: transparent; */
     display: flex;
     z-index: 999;
@@ -78,10 +86,10 @@ header .nav h4:hover a {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    /* background-image: url('../Images/PurpleBackground.jpeg');
+    background-image: url('../Images/purple.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; */
+    background-position: center;
     /* justify-content: space-between; */
     margin-bottom: 30px;
 }
@@ -121,6 +129,7 @@ header .nav h4:hover a {
     padding: 0;
     object-fit: cover;
     overflow: hidden;
+
 }
 
 .banner-section .banner-content .text-animation h1 {
@@ -133,9 +142,9 @@ header .nav h4:hover a {
     font-size: 70px;
     font-weight: 600;
     color: #ffffff;
-    background-color: #000;
+    mix-blend-mode: multiply;
+    background-color: #000000;
     overflow: hidden;
-    mix-blend-mode: darken;
 }
 
 /* Get started button */
@@ -1285,17 +1294,24 @@ header .nav h4:hover a {
     padding: 20px;
 }
 
-.software-name a {
+.tab-header {
+    border: 2px solid red;
+}
+
+.software-name .tab-header .templates-heading {
     text-decoration: none;
     color: var(--white-color);
+    background-color: transparent;
+    border: none;
     transition: all 0.3s ease;
 }
 
-.software-name a:hover {
+.software-name .tab-header .templates-heading:hover {
     color: var(--white-color);
     text-decoration: none;
     filter: drop-shadow(0 0 5px var(--white-color));
 }
+
 
 .my-projects .projects-templates .web-templates {
     width: 100%;
