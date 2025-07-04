@@ -111,40 +111,15 @@ header .nav h4:hover a {
     font-size: 60px;
 }
 
-.text-animation {
-    width: 100%;
-    height: 12vh;
-    margin: 0;
+.banner-section .banner-content .name-text h1 {
     margin-bottom: 30px;
-    overflow: hidden;
-    background-color: #000;
-    position: relative;
-    display: block;
-}
-
-.text-animation video {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    object-fit: cover;
-    overflow: hidden;
-
-}
-
-.banner-section .banner-content .text-animation h1 {
-    position: absolute;
-    top: 0;
-    left: 0;
     height: 100%;
     width: 100%;
     padding: 0;
     font-size: 70px;
     font-weight: 600;
-    color: #ffffff;
-    mix-blend-mode: multiply;
-    background-color: #000000;
-    overflow: hidden;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--white-color);
 }
 
 /* Get started button */
