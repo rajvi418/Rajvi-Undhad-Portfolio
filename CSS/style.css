@@ -472,7 +472,7 @@ header .nav h4:hover a {
 .my-skills {
     padding: 110px 0px;
     width: 100%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     background-image: url('../Images/Backgrounds/Purple-bg-2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -487,6 +487,8 @@ header .nav h4:hover a {
 .skill-container {
     width: 80%;
     backdrop-filter: blur(5px);
+    border: 1px solid #ffffff32;
+    box-shadow: 0 0 20px #ffffff32;
     border-radius: 15px;
     margin: auto;
 }
@@ -510,6 +512,10 @@ header .nav h4:hover a {
 .my-skills .skills-logo .web-logos {
     display: block;
     width: 100%;
+}
+
+.my-skills .skills-logo .web-logos .logo-row:nth-child(1) {
+    margin-bottom: 30px;
 }
 
 .my-skills .skills-logo .logo-row {
