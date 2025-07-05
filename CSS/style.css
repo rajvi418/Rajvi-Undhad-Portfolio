@@ -309,7 +309,8 @@ header .nav h4:hover a {
 }
 
 .about-content {
-    width: 80%;
+    width: 90%;
+    padding: 30px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -320,7 +321,24 @@ header .nav h4:hover a {
 .about-content h1 {
     font-size: 60px;
     margin-bottom: 30px;
+    position: relative;
+    border: 2px solid red;
 }
+
+.about-content .about-me-heading .gradient-border {
+    height: 500px;
+    width: 50%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 2px;
+    border-style: solid;
+    position: absolute;
+    left: 25%;
+    top: 10px;
+    transform: rotate(-90deg);
+    border-image: linear-gradient(to bottom, #18181800, #eee, #18181800) 1 100%;
+}
+
 
 .about-content p {
     font-size: 24px;
@@ -492,6 +510,24 @@ header .nav h4:hover a {
     border-radius: 15px;
     margin: auto;
     padding: 30px;
+}
+
+.my-skills .skills-heading {
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.my-skills .skills-heading .gradient-border {
+    height: 500px;
+    width: 50%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 2px;
+    border-style: solid;
+    position: absolute;
+    left: 25%;
+    transform: rotate(-90deg);
+    border-image: linear-gradient(to bottom, #18181800, #eee, #18181800) 1 100%;
 }
 
 .my-skills .skills-heading h1 {
