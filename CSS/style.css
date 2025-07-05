@@ -1491,3 +1491,83 @@ header .nav h4:hover a {
 .education-department .description p {
     font-size: 16px;
 }
+
+/* Contact section */
+.contact-section {
+    border: 2px solid red;
+    width: 100%;
+    background-image: url('../Images/Backgrounds/Purple-bg-4.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+}
+
+.suggetion-title {
+    text-align: center;
+    padding: 15px;
+}
+
+.suggetion-title p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.suggetion-title .text-deco h1 {
+    margin: 0;
+    font-size: 200px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 100px;
+}
+
+
+.suggetion-title .text-deco svg {
+    margin-bottom: 45px;
+    margin-left: -45px;
+    align-content: center;
+}
+
+.contact-info {
+    /* border: 2px solid green; */
+    padding: 15px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.navigations {
+    /* border: 2px solid blue; */
+    width: 60%;
+    margin-right: 15px;
+}
+
+.navigations .titles {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+}
+
+.links .footer-nav {
+    display: block;
+}
+
+.links .footer-nav h6 {
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.social-media {
+    width: 30%;
+}
+
+.social-media .titles {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+}
+
+.social-media .social-links .social-name a h6 {
+    margin-bottom: 10px;
+    font-weight: 400;
+}
