@@ -1419,3 +1419,75 @@ header .nav h4:hover a {
     object-fit: cover;
     margin-bottom: 10px;
 }
+
+/* Education Section  */
+.education-section {
+    padding: 110px 0px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.education-section .education-container {
+    width: 90%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    padding: 60px 0px 20px 0px;
+    flex-wrap: wrap;
+    backdrop-filter: blur(5px);
+    border: 1px solid #ffffff32;
+    box-shadow: 0 0 20px #ffffff32;
+}
+
+.education-section .education-title h1 {
+    padding: 10px;
+    font-size: 60px;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.education-section .about-education {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    /* padding: 15px; */
+}
+
+.education-section .about-education .school-education,
+.education-section .about-education .collage-education {
+    width: 90%;
+}
+
+.education-section .about-education .school-education .department-title h2,
+.education-section .about-education .collage-education .department-title h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 40px;
+}
+
+.education-department {
+    display: flex;
+    padding: 0px 15px;
+    margin-bottom: 50px;
+}
+
+.education-department .year h2 {
+    font-size: 24px;
+    margin-right: 30px;
+}
+
+.education-department .year p {
+    font-size: 18px;
+    color: grey;
+}
+
+.education-department .description h3 {
+    font-size: 24px;
+}
+
+.education-department .description p {
+    font-size: 16px;
+}
