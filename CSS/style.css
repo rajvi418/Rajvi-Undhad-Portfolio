@@ -24,12 +24,38 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center
+    background-position: center;
+    cursor: cell;
 }
 
 a {
     text-decoration: none;
     color: var(--white-color);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--purple-color);
+    border-radius: 15px;
+}
+
+@keyframes scrolling {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
 }
 
 header {
@@ -91,6 +117,9 @@ header .nav h4:hover a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+    animation: 2s scrolling linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
 }
 
 .banner-section .banner-content {
@@ -276,8 +305,8 @@ header .nav h4:hover a {
 }
 
 .banner-images img {
-    width: 90%;
-    height: 60vh;
+    width: 70%;
+    /* height: 70vh; */
     object-fit: cover;
     border-radius: 10px;
 }
@@ -307,14 +336,11 @@ header .nav h4:hover a {
 /* About Section  */
 .about-section {
     width: 100%;
-    ;
     padding: 80px 0px;
+    animation: 2s scrolling linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
 }
-
-/* .about-section .about-bg-images {
-
-    padding: 0;
-} */
 
 .about-content {
     width: 80%;
@@ -497,6 +523,7 @@ header .nav h4:hover a {
     flex-direction: column;
     justify-content: center;
     z-index: -1;
+
 }
 
 .skill-container {
@@ -507,6 +534,9 @@ header .nav h4:hover a {
     border-radius: 15px;
     margin: auto;
     padding: 30px;
+    animation: 2s scrolling linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
 }
 
 .my-skills .skills-heading {
@@ -1288,6 +1318,9 @@ header .nav h4:hover a {
 .projects {
     width: 100%;
     padding: 110px 0px 110px 0px;
+    animation: 2s scrolling linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
 }
 
 .projects .my-project-heading {
@@ -1427,6 +1460,9 @@ header .nav h4:hover a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    animation: 2s scrolling linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
 
 }
 
@@ -1494,17 +1530,21 @@ header .nav h4:hover a {
 
 /* Contact section */
 .contact-section {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 100%;
     background-image: url('../Images/Backgrounds/Purple-bg-4.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 15px;
+    padding: 80px 15px 15px 15px;
 }
 
 .suggetion-title {
     text-align: center;
+    cursor: context-menu;
+    animation: 2s scrolling linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
     padding: 15px;
 }
 
@@ -1536,6 +1576,9 @@ header .nav h4:hover a {
     width: 90%;
     margin: auto;
     display: flex;
+    animation: 2s scrolling linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
 }
 
 .navigations {
@@ -1570,4 +1613,20 @@ header .nav h4:hover a {
 .social-media .social-links .social-name a h6 {
     margin-bottom: 10px;
     font-weight: 400;
+}
+
+.copy-right {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy-right .bi-c-circle {
+    margin-right: 10px;
+}
+
+.copy-right h6 {
+    margin: 0;
 }
