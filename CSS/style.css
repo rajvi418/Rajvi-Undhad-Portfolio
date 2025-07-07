@@ -305,7 +305,7 @@ header .nav h4:hover a {
 }
 
 .banner-images img {
-    width: 70%;
+    width: 100%;
     /* height: 70vh; */
     object-fit: cover;
     border-radius: 10px;
