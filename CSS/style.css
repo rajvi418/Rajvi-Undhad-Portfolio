@@ -1453,9 +1453,17 @@ header .nav h4:hover a {
     margin-bottom: 10px;
 }
 
+/* Illustrations  */
+.illustrations {
+    border: 2px solid red;
+    width: 100%;
+    padding: 15px;
+}
+
+
 /* Education Section  */
 .education-section {
-    padding: 110px 0px;
+    padding: 80px 0px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
