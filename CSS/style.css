@@ -126,7 +126,7 @@ header .nav h4:hover a {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 60%;
+    width: 50%;
     height: 400px;
     padding-left: 150px;
 }
