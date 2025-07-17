@@ -266,3 +266,35 @@
         height: 100px;
     }
 }
+
+@media (max-width:767px) {
+    .header-section {
+        border: 2px solid red;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-section .nav {
+        order: 2;
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .header-section .nav h4 {
+        margin-bottom: 20px;
+    }
+
+    .header-section .nav h4 a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+    }
+}
+
+
+/* sav thin nani screen ma min no ave 
+    moti ma max ne ave
+ XL : max-width: 1359px
+   xxl :min-width: 1360px, max-width 2560px
+*/
