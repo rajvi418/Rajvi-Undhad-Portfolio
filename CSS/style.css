@@ -73,6 +73,7 @@ header {
 }
 
 .header-section {
+    margin: auto;
     display: flex;
     width: 80%;
     justify-content: space-between;
@@ -105,6 +106,85 @@ header .nav h4:hover a {
     filter: drop-shadow(0 0 5px var(--white-color));
 }
 
+/* Mobile and Tablet Screen */
+.slider {
+    order: 2;
+    width: 100%;
+    display: none;
+    margin-top: 60px;
+    animation: fadeIn 0.5s linear 0s 1 normal forwards;
+}
+
+.header-section .slider .nav {
+    width: 80%;
+    padding: 0 15px;
+}
+
+.header-section .slider .nav h4 {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.header-section .slider .nav h4 a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Mini menu  */
+.hamburger {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+input .hamburger {
+    display: none;
+}
+
+.hamburger svg {
+    /* The size of the SVG defines the overall size */
+    height: 3em;
+    /* Define the transition for transforming the SVG */
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+    fill: none;
+    stroke: white;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    /* Define the transition for transforming the Stroke */
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+    stroke-dasharray: 12 63;
+}
+
+input:checked + .hamburger svg {
+    transform: rotate(-45deg);
+}
+
+input:checked + .hamburger svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked ~ .slider {
+    display: flex;
+    justify-content: right;
+}
+
+/* Banner  */
 .banner-section {
     width: 100%;
     padding: 100px 0px 70px 0px;

@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/bootstrap.css">
+    <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../MediaQuery/media.css">
+
     <title>Document</title>
 </head>
 <style>
@@ -20,31 +23,41 @@
 </style>
 
 <body>
-    <header class="col-sm-5">
+    <header class="col-xl-12 col-lg-12 d-none d-xl-block d-lg-block d-none">
         <div class="header-section">
-            <div class="navigation-bar">
-                <label class="hamburger">
-                    <input type="checkbox" id="menu-toggle">
-                    <svg viewBox="0 0 32 32">
-                        <path class="line line-top-bottom"
-                            d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
-                        </path>
-                        <path class="line" d="M7 16 27 16"></path>
-                    </svg>
-                </label>
+            <div class="nav">
+                <h4><a href="#home">Home</a></h4>
+                <h4><a href="#about">About</a></h4>
+                <h4><a href="#skills">Skills</a></h4>
             </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Images/r-logo.png" alt="#">
+                </a>
+            </div>
+            <div class="nav">
+                <h4><a href="#projects">Projects</a></h4>
+                <h4><a href="#education">Education</a></h4>
+                <h4><a href="#contact">Contact</a></h4>
+            </div>
+        </div>
+    </header>
+    <header class="d-none d-xl-none d-lg-none d-md-block d-sm-block d-xs-block">
+        <div class="header-section">
+            <input type="checkbox" id="menu-toggle">
+            <label class="hamburger" for="menu-toggle">
+                <svg viewBox="0 0 32 32">
+                    <path class="line line-top-bottom"
+                        d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                    </path>
+                    <path class="line" d="M7 16 27 16"></path>
+                </svg>
+            </label>
             <div class="slider">
                 <div class="nav">
                     <h4><a href="#home">Home</a></h4>
                     <h4><a href="#about">About</a></h4>
                     <h4><a href="#skills">Skills</a></h4>
-                </div>
-                <!-- <div class="logo">
-                <a href="index.html">
-                    <img src="/Images/r-logo.png" alt="#">
-                </a>
-            </div> -->
-                <div class="nav">
                     <h4><a href="#projects">Projects</a></h4>
                     <h4><a href="#education">Education</a></h4>
                     <h4><a href="#contact">Contact</a></h4>
