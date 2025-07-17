@@ -277,6 +277,8 @@
 
     .header-section .slider {
         order: 2;
+        width: 200px;
+        transform: translateX(-200px);
     }
 
     .header-section .slider .nav {
@@ -343,6 +345,10 @@
     .hamburger input:checked + svg .line-top-bottom {
         stroke-dasharray: 20 300;
         stroke-dashoffset: -32.42;
+    }
+
+    .navigation-bar input:checked ~ .slider {
+        transform: translateX(0);
     }
 }
 
