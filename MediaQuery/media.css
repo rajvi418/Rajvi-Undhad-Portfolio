@@ -275,6 +275,10 @@
         flex-direction: column;
     }
 
+    .header-section .slider {
+        order: 2;
+    }
+
     .header-section .slider .nav {
         width: 100%;
         padding: 0 15px;
