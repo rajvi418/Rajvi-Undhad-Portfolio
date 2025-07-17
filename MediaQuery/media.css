@@ -275,18 +275,17 @@
         flex-direction: column;
     }
 
-    .header-section .nav {
-        order: 2;
+    .header-section .slider .nav {
         width: 100%;
         padding: 0 15px;
     }
 
-    .header-section .nav h4 {
+    .header-section .slider .nav h4 {
         margin: 0;
         margin-bottom: 20px;
     }
 
-    .header-section .nav h4 a {
+    .header-section .slider .nav h4 a {
         text-decoration: none;
         color: #fff;
         font-size: 18px;
