@@ -1,4 +1,56 @@
-@media (max-width:575px) {
+/* @media (max-width:320px) {
+    /* XXs */
+
+.col-xxs-1 {
+    width: 8.33%;
+}
+
+.col-xxs-2 {
+    width: 16.6666%;
+}
+
+.col-xxs-3 {
+    width: 25%;
+}
+
+.col-xxs-4 {
+    width: 33.3333%;
+}
+
+.col-xxs-5 {
+    width: 41.6666%;
+}
+
+.col-xxs-6 {
+    width: 50%;
+}
+
+.col-xxs-7 {
+    width: 58.3333%;
+}
+
+.col-xxs-8 {
+    width: 66.6666%;
+}
+
+.col-xxs-9 {
+    width: 75%;
+}
+
+.col-xxs-10 {
+    width: 83.3333%;
+}
+
+.col-xxs-11 {
+    width: 91.6666%;
+}
+
+.col-xxs-12 {
+    width: 100%;
+}
+}
+
+(min-width:320px) and */ @media (max-width:575px) {
     /* xs screen */
 
     .col-xs-1 {
@@ -263,11 +315,46 @@
 (max-width:2560px) {
     header {
         display: flex;
-        /* height: 100px; */
     }
 }
 
-@media (max-width:991px) {
+@media (max-width:320px) {
+    header {
+        display: flex;
+        width: 30%;
+        background-color: transparent;
+        justify-content: space-between;
+    }
+
+    .header-section {
+        width: 100%;
+        margin: 0;
+        height: 100%;
+        display: flex;
+        text-align: right;
+        align-items: center;
+        position: relative;
+    }
+
+    .header-section .slider .nav {
+        justify-content: flex-end;
+    }
+
+    .header-section .slider .nav h4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        position: absolute;
+        top: 0px;
+        left: 30px;
+    }
+
+}
+
+@media (min-width:575px) and (max-width:991px) {
     header {
         display: flex;
         width: 30%;
