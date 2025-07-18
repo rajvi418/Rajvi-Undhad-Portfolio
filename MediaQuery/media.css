@@ -323,7 +323,6 @@
         display: flex;
         width: 30%;
         background-color: transparent;
-        justify-content: space-between;
     }
 
     .header-section {
@@ -332,6 +331,7 @@
         height: 100%;
         display: flex;
         text-align: right;
+        justify-content: right;
         align-items: center;
         position: relative;
     }
@@ -367,7 +367,9 @@
         margin: 0;
         height: 100%;
         display: flex;
+        /* border: 2px solid green; */
         text-align: right;
+        justify-content: right;
         align-items: center;
         position: relative;
     }

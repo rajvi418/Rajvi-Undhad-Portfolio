@@ -108,7 +108,7 @@ header .nav h4:hover a {
 
 .slider {
     order: 2;
-    width: 100%;
+    width: 25%;
     display: none;
     margin-top: 60px;
     animation: fadeIn 0.5s linear 0s 1 normal forwards;
@@ -116,6 +116,7 @@ header .nav h4:hover a {
 
 .header-section .slider .nav {
     width: 80%;
+    margin: 0 auto;
     padding: 0 15px;
 }
 
@@ -125,6 +126,7 @@ header .nav h4:hover a {
 }
 
 .header-section .slider .nav h4 a {
+    /* width: fit-content; */
     text-decoration: none;
     color: #fff;
     font-size: 18px;
