@@ -1,56 +1,56 @@
-/* @media (max-width:320px) {
+@media (max-width:320px) {
     /* XXs */
 
-.col-xxs-1 {
-    width: 8.33%;
+    .col-xxs-1 {
+        width: 8.33%;
+    }
+
+    .col-xxs-2 {
+        width: 16.6666%;
+    }
+
+    .col-xxs-3 {
+        width: 25%;
+    }
+
+    .col-xxs-4 {
+        width: 33.3333%;
+    }
+
+    .col-xxs-5 {
+        width: 41.6666%;
+    }
+
+    .col-xxs-6 {
+        width: 50%;
+    }
+
+    .col-xxs-7 {
+        width: 58.3333%;
+    }
+
+    .col-xxs-8 {
+        width: 66.6666%;
+    }
+
+    .col-xxs-9 {
+        width: 75%;
+    }
+
+    .col-xxs-10 {
+        width: 83.3333%;
+    }
+
+    .col-xxs-11 {
+        width: 91.6666%;
+    }
+
+    .col-xxs-12 {
+        width: 100%;
+    }
 }
 
-.col-xxs-2 {
-    width: 16.6666%;
-}
-
-.col-xxs-3 {
-    width: 25%;
-}
-
-.col-xxs-4 {
-    width: 33.3333%;
-}
-
-.col-xxs-5 {
-    width: 41.6666%;
-}
-
-.col-xxs-6 {
-    width: 50%;
-}
-
-.col-xxs-7 {
-    width: 58.3333%;
-}
-
-.col-xxs-8 {
-    width: 66.6666%;
-}
-
-.col-xxs-9 {
-    width: 75%;
-}
-
-.col-xxs-10 {
-    width: 83.3333%;
-}
-
-.col-xxs-11 {
-    width: 91.6666%;
-}
-
-.col-xxs-12 {
-    width: 100%;
-}
-}
-
-(min-width:320px) and */ @media (max-width:575px) {
+@media (min-width:320px) and (max-width:575px) {
     /* xs screen */
 
     .col-xs-1 {
