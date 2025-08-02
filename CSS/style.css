@@ -98,6 +98,12 @@ header .logo img {
     /* margin-top: -10px; */
 }
 
+header .h-logo img {
+    width: 60px;
+    height: 60px;
+    /* margin-top: -10px; */
+}
+
 header .nav h4:hover a {
     color: var(--white-color);
     text-decoration: none;

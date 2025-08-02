@@ -298,7 +298,7 @@
     .logo {
         position: absolute;
         top: 30%;
-        left: 8%;
+        left: 10px;
     }
 
 }
