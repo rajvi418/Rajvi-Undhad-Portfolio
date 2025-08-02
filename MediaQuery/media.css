@@ -277,7 +277,7 @@
     .header-section {
         width: 100%;
         margin: 0;
-        height: 100%;
+        height: 100px;
         display: flex;
         text-align: right;
         justify-content: right;
@@ -302,45 +302,6 @@
     }
 
 }
-
-@media (min-width:575px) and (max-width:991px) {
-    header {
-        display: flex;
-        width: 30%;
-        background-color: transparent;
-        justify-content: space-between;
-    }
-
-    .header-section {
-        width: 100%;
-        margin: 0;
-        height: 100%;
-        display: flex;
-        /* border: 2px solid green; */
-        text-align: right;
-        justify-content: right;
-        align-items: center;
-        position: relative;
-    }
-
-    .header-section .slider .nav {
-        justify-content: flex-end;
-    }
-
-    .header-section .slider .nav h4 {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .logo {
-        position: absolute;
-        top: 0px;
-        left: 30px;
-    }
-
-}
-
 
 /* sav thin nani screen ma min no ave 
     moti ma max ne ave
